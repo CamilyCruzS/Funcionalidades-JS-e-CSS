@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body.dark{
+    background-color: #292C35;
+}
+
+/* darkmode */
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+/* movendo a bolinha ao clicar no checkbox  */
+.checkbox:checked + .label .ball {
+    transform: translateX(32px) ;
+}
+
+
+.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 20px;
+    width: 50px;
+}
+
+/* bolinha branca acima do input*/
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s linear;
+}
+
+/* icone lua */
+.fa-moon{
+    color: #f1c40f;
+}
+
+/* icone sol */
+.fa-sun{
+    color: #f39c12;
+}
+
+
